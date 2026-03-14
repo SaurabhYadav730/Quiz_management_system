@@ -11,7 +11,7 @@ const path = require('path');
 const { WebSocketServer } = require('ws');
 
 const PORT = process.env.PORT || 3000;
-const STATIC_DIR = __dirname;
+const STATIC_DIR = path.join(__dirname, 'public');
 
 // MIME types for static file serving
 const MIME_TYPES = {
